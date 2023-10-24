@@ -42,7 +42,7 @@ app.use(flash());
 app.disable('x-powered-by');
 
 app.set('views', path.resolve(__dirname, 'src', 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');a
 
 app.use(csrf());
 // Nossos próprios middlewares
@@ -52,7 +52,7 @@ app.use(csrfMiddleware);
 app.use(routes);
 
 app.on('pronto', () => {
-  app.listen(3000, () => {
+  app.listen(3001, () => {
     console.log('Acessar http://localhost:3000');
     console.log('Servidor executando na porta 3000');
   });
