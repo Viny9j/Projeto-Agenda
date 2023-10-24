@@ -39,6 +39,8 @@ const sessionOptions = session({
 app.use(sessionOptions);
 app.use(flash());
 
+app.disable('x-powered-by');
+
 app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
